@@ -1,0 +1,68 @@
+name: Bug 报告
+description: 脚本不工作了？在这里反馈
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+
+body:
+  - type: checkboxes
+    id: search
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已经搜索过已有 Issue，没有找到相同的问题
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 脚本版本
+      description: 打开 Tampermonkey 管理面板，查看脚本的 @version
+      placeholder: "5.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: page
+    attributes:
+      label: 出问题的页面
+      options:
+        - 收藏页
+        - 搜索结果页
+        - 岗位详情页
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述
+      description: 发生了什么？预期是什么？
+      placeholder: |
+        1. 打开收藏页
+        2. 点击"开始导出"
+        3. 卡在第 3 个岗位不动了
+        预期：应该继续抓取下一个
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: 控制台报错
+      description: 按 F12 打开控制台，截图或复制错误信息
+      render: shell
+
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器 + 油猴扩展
+      placeholder: "Chrome 131 + Tampermonkey 5.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 截图、录屏、或其他有助于定位问题的信息

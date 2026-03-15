@@ -1,0 +1,44 @@
+name: 平台适配
+description: Boss直聘改版导致脚本不工作
+title: "[适配] "
+labels: ["platform-change", "bug", "needs-triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Boss直聘经常改版，这是最常见的问题类型。
+        请尽量提供以下信息，方便快速定位和修复。
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 具体表现
+      description: 哪个功能不工作了？
+      placeholder: |
+        - 收藏页按钮没有出现
+        - 或：搜索页能扫描但详情页抓不到数据
+        - 或：翻页按钮点了没反应
+    validations:
+      required: true
+
+  - type: textarea
+    id: page-structure
+    attributes:
+      label: 页面结构变化（如果你看得懂 HTML）
+      description: 按 F12 看看页面元素 class 名是否和脚本中的选择器不同
+      render: html
+
+  - type: input
+    id: date
+    attributes:
+      label: 大概什么时候开始不工作的
+      placeholder: "2026-03-15 左右"
+
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器 + 油猴扩展
+      placeholder: "Chrome 131 + Tampermonkey 5.3"
+    validations:
+      required: true

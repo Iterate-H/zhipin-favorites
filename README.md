@@ -48,7 +48,7 @@
 1. 安装浏览器扩展：[Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)
 2. 点击下方链接一键安装：
 
-   **[📥 点击安装脚本](https://raw.githubusercontent.com/huiru07/zhipin-favorites/main/zhipin_export.user.js)**
+   **[📥 点击安装脚本](https://raw.githubusercontent.com/Iterate-H/zhipin-favorites/main/zhipin_export.user.js)**
 
    > 或手动复制 `zhipin_export.user.js` 内容，在扩展管理页中新建脚本粘贴保存。
 
@@ -89,6 +89,12 @@
 ```
 
 脚本在 `document-start` 阶段注入 XHR/Fetch 拦截器，在页面最早阶段捕获详情接口响应，所有数据仅保存在本地浏览器 IndexedDB 中，不对外传输。
+
+## 参与贡献
+
+欢迎提交 Issue 和 PR！尤其是 Boss直聘改版后的适配修复。
+
+详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 ## License
 
