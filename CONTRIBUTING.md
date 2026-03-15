@@ -182,4 +182,16 @@
 
 ---
 
-有问题？直接开 Issue 讨论。
+## AI 辅助贡献
+
+用 Claude、Copilot 或其他 AI 工具写的代码？完全欢迎，标注一下就行：
+
+- 在 PR 描述中注明使用了哪个 AI 工具
+- 说明测试程度（没测 / 简单测了 / 完整测过）
+- 确认你理解代码做了什么（不要提交自己看不懂的代码）
+
+AI 辅助的 PR 和纯手写的 PR 一视同仁，我们只需要透明度。
+
+---
+
+有问题？直接开 [Issue](https://github.com/Iterate-H/zhipin-favorites/issues) 讨论。
